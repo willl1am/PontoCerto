@@ -63,6 +63,16 @@
 	</dependencies>
 
 	<build>
+		<!-- Explicit resources configuration: disable filtering to avoid encoding/filter issues -->
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>false</filtering>
+				<includes>
+					<include>**/*</include>
+				</includes>
+			</resource>
+		</resources>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
