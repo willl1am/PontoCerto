@@ -29,7 +29,9 @@
         </a>
 
         <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="index.html" class="nav-link px-2 link-secondary">Início</a></li>
+          <li>
+            <a href="index.html" class="nav-link px-2 link-secondary">Início</a>
+          </li>
           <li><a href="#" class="nav-link px-2 link-dark">Linhas</a></li>
           <li><a href="#" class="nav-link px-2 link-dark">Cronogramas</a></li>
         </ul>
@@ -47,8 +49,9 @@
               <label
                 class="fs-5 mb-4"
                 for="exampleInputEmail1"
-                class="form-label">
-                  Informa o número da linha de ônibus que deseja buscar:
+                class="form-label"
+              >
+                Informa o número da linha de ônibus que deseja buscar:
               </label>
               <input
                 id="input-linha"
@@ -59,6 +62,57 @@
             </div>
             <button type="submit" class="btn btn-primary">Buscar</button>
           </form>
+        </div>
+
+        <div class="accordion mt-4" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Informações da Linha
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th class="fs-5">Código da Linha</th>
+                      <th class="fs-5">Linha Circular</th>
+                      <th class="fs-5">Letreiro (Numérico Principal)</th>
+                      <th class="fs-5">Sentido da Linha</th>
+                      <th class="fs-5">Tipo de Letreiro (Modo de Operação)</th>
+                      <th class="fs-5">Terminal Principal</th>
+                      <th class="fs-5">Terminal Secundário</th>
+                      <th class="fs-5">Horário</th>
+                    </tr>
+                  </thead>
+                  <tbody id="tabela-corpo">
+                    <tr>
+                      <td>1865</td>
+                      <td>false</td>
+                      <td>3006</td>
+                      <td>1</td>
+                      <td>10</td>
+                      <td>CPTM GUAIANASES</td>
+                      <td>JD. FANGANIELO</td>
+                      <td>11h24</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <footer
@@ -78,7 +132,9 @@
         </a>
         <ul class="nav col-md-4 justify-content-end">
           <li class="nav-item">
-            <a href="index.html" class="nav-link px-2 text-body-secondary">Início</a>
+            <a href="index.html" class="nav-link px-2 text-body-secondary"
+              >Início</a
+            >
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link px-2 text-body-secondary">Linhas</a>
