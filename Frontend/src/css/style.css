@@ -1,3 +1,7 @@
-
+@media (min-width: 768px) {
+  .formulario {
+    min-height: calc(100vh - 250px);
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

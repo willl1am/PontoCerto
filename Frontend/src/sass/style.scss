@@ -1,0 +1,5 @@
+.formulario {
+  @media (min-width: 768px) {
+    min-height: calc(100vh - 250px);
+  }
+}

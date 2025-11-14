@@ -1,11 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <title>Ponto Certo</title>
+  </head>
+  <body>
+    <main class="container min-vh-100">
+      <header
+        class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom"
+      >
+        <a
+          href="/"
+          class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none"
+        >
+          <img
+            src="./src/img/placeholder.png"
+            alt="Logo Ponto Certo"
+            width="40"
+          />
+          <span class="fs-4 d-inline-block ms-2">Ponto Certo</span>
+        </a>
+
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="#" class="nav-link px-2 link-secondary">Início</a></li>
+          <li><a href="#" class="nav-link px-2 link-dark">Linhas</a></li>
+          <li><a href="#" class="nav-link px-2 link-dark">Cronogramas</a></li>
+        </ul>
+
+        <div class="col-md-3 text-end">
+          <button type="button" class="btn btn-outline-primary me-2">
+            Login
+          </button>
+          <button type="button" class="btn btn-primary">Sign-up</button>
+        </div>
+      </header>
+      <section class="row">
+        <div class="col-md-6 d-flex flex-align-center justify-content-center">
+          <img class="w-100" src="./src/img/bus.png" alt="Figura ilustrativa" />
+        </div>
+        <div class="col-md-6">
+          <form
+            class="formulario mt-4 mt-md-0 d-flex flex-align-center justify-content-center flex-column"
+          >
+            <div class="mb-3">
+              <label
+                class="fs-5 mb-4"
+                for="exampleInputEmail1"
+                class="form-label"
+                >Informa a linha de ônibus que deseja buscar:</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+            </div>
+            <button type="submit" class="btn btn-primary">Buscar</button>
+          </form>
+        </div>
+      </section>
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <p class="col-md-4 mb-0 text-body-secondary">© 2025 Company, Inc</p>
+        <a
+          href="/"
+          class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+          aria-label="Bootstrap"
+        >
+          <img
+            src="./src/img/placeholder.png"
+            alt="Logo Ponto Certo"
+            width="40"
+          />
+        </a>
+        <ul class="nav col-md-4 justify-content-end">
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">Início</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">Linhas</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary"
+              >Cronogramas</a
+            >
+          </li>
+        </ul>
+      </footer>
+    </main>
+    <script src="./src/js/script.js" type="module"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
