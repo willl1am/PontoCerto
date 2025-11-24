@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    lo
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <link
       rel="stylesheet"
@@ -53,12 +54,30 @@
               >
                 Informa o número da linha de ônibus que deseja buscar:
               </label>
-              <input
+
+              <div class="input-group mb-3">
+                <input
                 id="input-linha"
                 type="text"
                 class="form-control"
                 aria-describedby="emailHelp"
               />
+                <button
+                  class="btn btn-outline-secondary dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Sugestões
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li>3006</li>
+                  <li>2705</li>
+                  <li>875P</li>
+                  <li>7023</li>
+                  <li>3160</li>
+                </ul>
+              </div>
             </div>
             <button type="submit" class="btn btn-primary">Buscar</button>
           </form>

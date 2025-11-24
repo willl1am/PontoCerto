@@ -4,4 +4,17 @@
   }
 }
 
+.dropdown-menu {
+  padding: 0;
+  width: fit-content;
+  min-width: 112px !important;
+}
+.dropdown-menu > li {
+  cursor: pointer;
+  padding: 4px 12px;
+}
+.dropdown-menu > li:hover {
+  background-color: #ddd;
+}
+
 /*# sourceMappingURL=style.css.map */
