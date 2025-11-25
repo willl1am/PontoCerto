@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "jquery": "^3.7.1",
+    "sass": "^1.93.3"
+  },
+  "scripts": {
+    "sass": "sass -w src/sass:src/css"
+  }
+}
