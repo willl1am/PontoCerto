@@ -1,5 +1,11 @@
 # PontoCerto
 
+### Integrantes:
+> - William Santiago Gracioso
+> - Lucas Carlos da Silva 
+> - Juan de Jesus Sousa
+> - Yuri Yamada Fernandes 
+
 ## Como Rodar o Projeto
 
 ### Backend (Spring Boot)
