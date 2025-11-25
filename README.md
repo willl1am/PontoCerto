@@ -1,5 +1,35 @@
 # PontoCerto
 
+## Como Rodar o Projeto
+
+### Backend (Spring Boot)
+
+1. Abra o terminal (PowerShell ou Git Bash)
+2. Navegue até a pasta do BackEnd:
+   ```bash
+   cd "/PontoCerto/BackEnd/Bus/Bus"
+   ```
+3. Execute o comando Maven para rodar a aplicação:
+   ```PowerShell
+   mvn spring-boot:run
+   ```
+4. A aplicação iniciará na porta **8080**: `http://localhost:8080`
+
+### Frontend
+
+1. Abra um novo terminal
+2. Navegue até a pasta Frontend:
+   ```bash
+   cd "/PontoCerto/Frontend"
+   ```
+3. Instale as dependências do npm:
+
+   ```bash
+   npm i
+   ```
+
+4. Abra o arquivo `index.html` no seu navegador.
+
 ## Arquitetura de Pastas Frontend
 
 ```
