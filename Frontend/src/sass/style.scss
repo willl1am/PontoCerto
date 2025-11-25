@@ -3,3 +3,15 @@
     min-height: calc(100vh - 250px);
   }
 }
+.dropdown-menu {
+  padding: 0;
+  width: fit-content;
+  min-width: 112px !important;
+  & > li{
+    cursor: pointer;
+    padding: 4px 12px;
+    &:hover{
+      background-color: #ddd;
+    }
+  }
+}

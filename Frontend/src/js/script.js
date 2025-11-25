@@ -1,6 +1,7 @@
 const form = document.querySelector("#busca-linha");
 const inputLinha = document.querySelector("#input-linha");
 const PROXY_BASE = `http://localhost:8080/proxy`;
+const dropdownItens = document.querySelectorAll(".dropdown-menu > li");
 
 async function submit(id) {
   try {
@@ -65,3 +66,10 @@ form.addEventListener("submit", function (event) {
   event.preventDefault();
   submit(inputLinha.value);
 });
+
+dropdownItens.forEach((item) => {
+  item.addEventListener("click", function () {
+    const linhaId = this.textContent.trim();
+    inputLinha.value = linhaId;
+  }); 
+})
